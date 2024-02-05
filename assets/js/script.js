@@ -1,7 +1,7 @@
 'use strict';
 
-var winUrl="http://127.0.0.1:5501"
-var apiUrl="https://delivry-server.onrender.com"
+
+
 /**
  * navbar toggle
  */
@@ -43,15 +43,3 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
-
-
-var selectionNav = document.querySelector(".navbar-list select");
-
-if (selectionNav) {
-  selectionNav.addEventListener("change", () => {
-    if (selectionNav.value != "") {
-        window.location=`${winUrl}/${selectionNav.value}`
-    }
-  }
-)
-}
